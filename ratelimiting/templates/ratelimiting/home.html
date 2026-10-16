@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home | Do More{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <p class="eyebrow">DJANGO SECURITY</p>
+    <h1>Build secure<br><span>web applications.</span></h1>
+    <p>Learn authentication, sessions and web security.</p>
+    <div class="actions">
+        <a href="{% url 'signup' %}" class="btn primary">Get started</a>
+        <a href="{% url 'login' %}" class="btn secondary">Sign in</a>
+    </div>
+</section>
+{% endblock %}

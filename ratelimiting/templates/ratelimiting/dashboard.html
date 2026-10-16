@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard | SecureLab{% endblock %}
+
+{% block content %}
+<section class="dashboard">
+    <p class="eyebrow">CONTROL PANEL</p>
+    <h1>Welcome, {{ user.username }}</h1>
+    <p>Your account is active.</p>
+
+    <div class="stats">
+        <article class="stat-card">
+            <span>Account</span>
+            <h2>Active</h2>
+        </article>
+        <article class="stat-card">
+            <span>Authentication</span>
+            <h2>Enabled</h2>
+        </article>
+    </div>
+</section>
+{% endblock %}
